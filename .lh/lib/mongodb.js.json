@@ -1,0 +1,18 @@
+{
+    "sourceFile": "lib/mongodb.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1643570496309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1643570496309,
+            "name": "Commit-0",
+            "content": "// This approach is taken from https://github.com/vercel/next.js/tree/canary/examples/with-mongodb\r\nimport { MongoClient } from \"mongodb\"\r\n\r\nconst uri = process.env.MONGODB_URI\r\nconst options = {\r\n  useUnifiedTopology: true,\r\n  useNewUrlParser: true,\r\n}\r\n\r\nlet client\r\nlet clientPromise\r\n\r\nif (!process.env.MONGODB_URI) {\r\n  throw new Error(\"Please add your Mongo URI to .env.local\")\r\n}\r\n\r\nif (process.env.NODE_ENV === \"development\") {\r\n  // In development mode, use a global variable so that the value\r\n  // is preserved across module reloads caused by HMR (Hot Module Replacement).\r\n  if (!global._mongoClientPromise) {\r\n    client = new MongoClient(uri, options)\r\n    global._mongoClientPromise = client.connect()\r\n  }\r\n  clientPromise = global._mongoClientPromise\r\n} else {\r\n  // In production mode, it's best to not use a global variable.\r\n  client = new MongoClient(uri, options)\r\n  clientPromise = client.connect()\r\n}\r\n\r\n// Export a module-scoped MongoClient promise. By doing this in a\r\n// separate module, the client can be shared across functions.\r\nexport default clientPromise"
+        }
+    ]
+}

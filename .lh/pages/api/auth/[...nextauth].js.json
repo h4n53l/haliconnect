@@ -1,0 +1,94 @@
+{
+    "sourceFile": "pages/api/auth/[...nextauth].js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1643570312806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643570327388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import NextAuth from \"next-auth\"\r\n-import GithubProvider from \"next-auth/providers/github\"\r\n+import GoogleProvider from \"next-auth/providers/github\"\r\n \r\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n"
+                },
+                {
+                    "date": 1643570336714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n-    GithubProvider({\r\n+    GoogleProvider({\r\n       clientId: process.env.GITHUB_ID,\r\n       clientSecret: process.env.GITHUB_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n"
+                },
+                {
+                    "date": 1643570542761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n     GoogleProvider({\r\n-      clientId: process.env.GITHUB_ID,\r\n+      clientId: process.env.Goo_ID,\r\n       clientSecret: process.env.GITHUB_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n"
+                },
+                {
+                    "date": 1643570548643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n     GoogleProvider({\r\n-      clientId: process.env.Goo_ID,\r\n+      clientId: process.env.GOOGL_ID,\r\n       clientSecret: process.env.GITHUB_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n"
+                },
+                {
+                    "date": 1643570554294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n     GoogleProvider({\r\n-      clientId: process.env.GOOGL_ID,\r\n+      clientId: process.env.GOOGLE_CLIENT_ID,\r\n       clientSecret: process.env.GITHUB_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n"
+                },
+                {
+                    "date": 1643570565957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   // Configure one or more authentication providers\r\n   providers: [\r\n     GoogleProvider({\r\n       clientId: process.env.GOOGLE_CLIENT_ID,\r\n-      clientSecret: process.env.GITHUB_SECRET,\r\n+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643571970302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n+  \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572009475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  \r\n+  adap\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572016034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adap\r\n+  adapter: pr\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572021284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adapter: pr\r\n+  adapter: \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572040490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adapter: \r\n+  adapter: Mongo\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572047155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+import { MongoDBAdapter } from \"@next-auth/mongodb-adapter\"\r\n import NextAuth from \"next-auth\"\r\n import GoogleProvider from \"next-auth/providers/github\"\r\n \r\n export default NextAuth({\r\n@@ -9,6 +10,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adapter: Mongo\r\n+  adapter: MongoDBAdapter(cl)\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572052926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import { MongoDBAdapter } from \"@next-auth/mongodb-adapter\"\r\n import NextAuth from \"next-auth\"\r\n import GoogleProvider from \"next-auth/providers/github\"\r\n+import clientPromise from \"../../../lib/mongodb\"\r\n \r\n export default NextAuth({\r\n   // Configure one or more authentication providers\r\n   providers: [\r\n@@ -10,6 +11,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adapter: MongoDBAdapter(cl)\r\n+  adapter: MongoDBAdapter(clientPromise)\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572062050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  adapter: MongoDBAdapter(clientPromise)\r\n+  adapter: MongoDBAdapter(clientPromise),\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572104863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,7 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n+  sec\r\n   adapter: MongoDBAdapter(clientPromise),\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572432711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,7 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  sec\r\n+  secret: process.env.,\r\n   adapter: MongoDBAdapter(clientPromise),\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572441026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,7 @@\n       clientSecret: process.env.GOOGLE_CLIENT_SECRET,\r\n     }),\r\n     // ...add more providers here\r\n   ],\r\n-  secret: process.env.,\r\n+  secret: process.env.JWT_SECRET,\r\n   adapter: MongoDBAdapter(clientPromise),\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572485766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,6 @@\n     // ...add more providers here\r\n   ],\r\n   secret: process.env.JWT_SECRET,\r\n   adapter: MongoDBAdapter(clientPromise),\r\n+  pages: \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643572492243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n   ],\r\n   secret: process.env.JWT_SECRET,\r\n   adapter: MongoDBAdapter(clientPromise),\r\n   pages: {\r\n-      signIn\r\n+      signIn:\r\n   }\r\n })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1643570312806,
+            "name": "Commit-0",
+            "content": "import NextAuth from \"next-auth\"\r\nimport GithubProvider from \"next-auth/providers/github\"\r\n\r\nexport default NextAuth({\r\n  // Configure one or more authentication providers\r\n  providers: [\r\n    GithubProvider({\r\n      clientId: process.env.GITHUB_ID,\r\n      clientSecret: process.env.GITHUB_SECRET,\r\n    }),\r\n    // ...add more providers here\r\n  ],\r\n})"
+        }
+    ]
+}

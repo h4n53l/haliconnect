@@ -1,0 +1,54 @@
+{
+    "sourceFile": "next.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1643572158475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643572165577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n module.exports = {\n   images: {\n     domains: [\"rb.gy\"]\n   },\n-  e\n+  env: {}\n }\n"
+                },
+                {
+                    "date": 1643572187532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,10 @@\n module.exports = {\n   images: {\n     domains: [\"rb.gy\"]\n   },\n-  env: {}\n+  env: {\n+    GOOGLE_CLIENT_ID=\"111\n+GOOGLE_CLIENT_SECTRET\n+MONGODB_KEY=\"Q8dJT3py\n+  }\n }\n"
+                },
+                {
+                    "date": 1643572194110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   images: {\n     domains: [\"rb.gy\"]\n   },\n   env: {\n-    GOOGLE_CLIENT_ID=\"111\n+    GOOGLE_CLIENT_ID\n GOOGLE_CLIENT_SECTRET\n-MONGODB_KEY=\"Q8dJT3py\n+MONGODB_KEY\n   }\n }\n"
+                },
+                {
+                    "date": 1643572203383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     domains: [\"rb.gy\"]\n   },\n   env: {\n     GOOGLE_CLIENT_ID\n-GOOGLE_CLIENT_SECTRET\n+    GOOGLE_CLIENT_SECTRET\n MONGODB_KEY\n   }\n }\n"
+                },
+                {
+                    "date": 1643572211389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   images: {\n     domains: [\"rb.gy\"]\n   },\n   env: {\n-    GOOGLE_CLIENT_ID\n-    GOOGLE_CLIENT_SECTRET\n-MONGODB_KEY\n-  }\n+    process.GOOGLE_CLIENT_ID\n+    process.GOOGLE_CLIENT_SECTRET\n+    process.MONGODB_KEY\n+  }process.\n }\n"
+                },
+                {
+                    "date": 1643572218055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   images: {\n     domains: [\"rb.gy\"]\n   },\n   env: {\n-    process.GOOGLE_CLIENT_ID\n-    process.GOOGLE_CLIENT_SECTRET\n-    process.MONGODB_KEY\n-  }process.\n+    process.env.GOOGLE_CLIENT_ID\n+    process.env.GOOGLE_CLIENT_SECTRET\n+    process.env.MONGODB_KEY\n+  }process.env.\n }\n"
+                },
+                {
+                    "date": 1643572227504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n   env: {\n     process.env.GOOGLE_CLIENT_ID\n     process.env.GOOGLE_CLIENT_SECTRET\n     process.env.MONGODB_KEY\n-  }process.env.\n+  }\n }\n"
+                },
+                {
+                    "date": 1643572232710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n   images: {\n     domains: [\"rb.gy\"]\n   },\n   env: {\n-    process.env.GOOGLE_CLIENT_ID\n-    process.env.GOOGLE_CLIENT_SECTRET\n-    process.env.MONGODB_KEY\n+    process.env.GOOGLE_CLIENT_ID=\n+    process.env.GOOGLE_CLIENT_SECTRET=\n+    process.env.MONGODB_KEY=\n   }\n }\n"
+                },
+                {
+                    "date": 1643572251521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,6 @@\n module.exports = {\n   images: {\n     domains: [\"rb.gy\"]\n   },\n-  env: {\n-    process.env.GOOGLE_CLIENT_ID=\n-    process.env.GOOGLE_CLIENT_SECTRET=\n-    process.env.MONGODB_KEY=\n-  }\n+\n }\n"
+                }
+            ],
+            "date": 1643572158475,
+            "name": "Commit-0",
+            "content": "module.exports = {\n  images: {\n    domains: [\"rb.gy\"]\n  },\n  e\n}\n"
+        }
+    ]
+}

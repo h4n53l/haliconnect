@@ -1,0 +1,54 @@
+{
+    "sourceFile": "pages/home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1643567247080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643567256080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <HeaderLink Icon={GroupIcon} text=\"Connections\" />\r\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n-                        <button\r\n+                        <button>HaLi</button>\r\n                 </div>\r\n             </header>\r\n         </div>\r\n     );\r\n"
+                },
+                {
+                    "date": 1643567262063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,13 @@\n             <HeaderLink Icon={GroupIcon} text=\"Connections\" />\r\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n-                        <button>HaLi</button>\r\n+                        <button\r\n+                        \r\n+                        >\r\n+                            \r\n+                        </button>\r\n                 </div>\r\n             </header>\r\n         </div>\r\n     );\r\n"
+                },
+                {
+                    "date": 1643567267297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n                         <button\r\n-                        \r\n+                        classname\r\n                         >\r\n                             \r\n                         </button>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1643567273475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n                         <button\r\n-                        classname\r\n+                        classname=\r\n                         >\r\n                             \r\n                         </button>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1643567287873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,11 @@\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n                         <button\r\n-                        classname=\r\n+                        classname=\"\"\r\n                         >\r\n-                            \r\n+                            Sign\r\n                         </button>\r\n                 </div>\r\n             </header>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1643567314080,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,12 @@\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n                         <button\r\n-                        classname=\"\"\r\n+                        className=\"text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2\"\r\n+                        onClick={() => signIn(provider.id, { callbackUrl: \"/\" })}\r\n                         >\r\n-                            Sign\r\n+                            Sign in\r\n                         </button>\r\n                 </div>\r\n             </header>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1643567325131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n                         <button\r\n                         className=\"text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2\"\r\n-                        onClick={() => signIn(provider.id, { callbackUrl: \"/\" })}\r\n+                        // onClick={() => signIn(provider.id, { callbackUrl: \"/\" })}\r\n                         >\r\n                             Sign in\r\n                         </button>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1643567411179,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <HeaderLink Icon={GroupIcon} text=\"Connections\" />\r\n             <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n             <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                         </div>\r\n-                        <div\r\n+                        <div>\r\n                         <button\r\n                         className=\"text-blue-700 font-semibold rounded-full border border-blue-700 px-5 py-1.5 transition-all hover:border-2\"\r\n                         // onClick={() => signIn(provider.id, { callbackUrl: \"/\" })}\r\n                         >\r\n"
+                },
+                {
+                    "date": 1643568756832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,11 @@\n                     className=\"text-3xl md:text-5xl text-amber-800/80 max-w-xl !leading-snug pl-4 xl:pl-0\"\r\n                     >\r\n Welcome to HaLiConnect\r\n                     </h1>\r\n-                    <div></div>\r\n+                    <div>\r\n+                        \r\n+                    </div>\r\n                 </div>\r\n             </main>\r\n         </div>\r\n     );\r\n"
+                }
+            ],
+            "date": 1643567247080,
+            "name": "Commit-0",
+            "content": "import Image from 'next/image';\r\nimport HeaderLink from '../components/HeaderLink';\r\nimport ExploreIcon from \"@mui/icons-material/Explore\";\r\nimport GroupIcon from \"@mui/icons-material/Group\";\r\nimport OndemandVideoSharpIcon from \"@mui/icons-material/OndemandVideoSharp\";\r\nimport BusinessCenterIcon from \"@mui/icons-material/BusinessCenter\";\r\nimport ArrowForwardIosRoundedIcon from \"@mui/icons-material/ArrowForwardIosRounded\";\r\nimport Head from \"next/head\";\r\n\r\n\r\nconst Home = () => {\r\n    return (\r\n        <div>\r\n            <header className=\"flex justify-around items-center py-4\">\r\n                <div className=\"relative w-36 h-10\">\r\n                    <Image src=\"https://rb.gy/dcmipu\" layout='fill' objectFit='contain'/>\r\n                </div>\r\n                <div classname=\"flex items-center sm:divide-x divide-gray-300\">\r\n                    <div className=\"hidden sm:flex space-x-8 pr-4\">\r\n                    <HeaderLink Icon={ExploreIcon} text=\"Discover\" />\r\n            <HeaderLink Icon={GroupIcon} text=\"Connections\" />\r\n            <HeaderLink Icon={OndemandVideoSharpIcon} text=\"Learning\" />\r\n            <HeaderLink Icon={BusinessCenterIcon} text=\"HaLiBee\" />\r\n                        </div>\r\n                        <button\r\n                </div>\r\n            </header>\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default Home;"
+        }
+    ]
+}

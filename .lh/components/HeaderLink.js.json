@@ -1,0 +1,38 @@
+{
+    "sourceFile": "components/HeaderLink.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1643566693996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643566701113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n const HeaderLink = ({ Icon, text, feed, active, avatar, hidden }) => {\r\n     return (\r\n         <div \r\n         className={`cursor-pointer flex flex-col justify-center items-center\r\n-        ${feed ? \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n+        ${feed \r\n+            ? \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n     : \"\"\r\n     }\r\n         `}>\r\n            {avatar ? \r\n"
+                },
+                {
+                    "date": 1643566707554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,10 +2,12 @@\n     return (\r\n         <div \r\n         className={`cursor-pointer flex flex-col justify-center items-center\r\n         ${feed \r\n-            ? \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n-    : \"\"\r\n+            ? \r\n+            \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n+    : \r\n+    \"\"\r\n     }\r\n         `}>\r\n            {avatar ? \r\n            <Icon className=\"!h-7 !w-7 lg:!-mb-1\"/> \r\n"
+                },
+                {
+                    "date": 1643566749089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         ${feed \r\n             ? \r\n             \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n     : \r\n-    \"\"\r\n+    \"text-gray-500 hover:text-gray-700\"\r\n     }\r\n         `}>\r\n            {avatar ? \r\n            <Icon className=\"!h-7 !w-7 lg:!-mb-1\"/> \r\n"
+                },
+                {
+                    "date": 1643566781583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n            <Icon className=\"!h-7 !w-7 lg:!-mb-1\"/> \r\n            :\r\n            <Icon/>\r\n         }\r\n-        <h4 className=\"text-sm\">{text}</h4>\r\n+        <h4 \r\n+        className=\"text-sm\">{text}</h4>\r\n         </div>\r\n     );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1643576574526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,12 @@\n            :\r\n            <Icon/>\r\n         }\r\n         <h4 \r\n-        className=\"text-sm\">{text}</h4>\r\n+        className=\"text-sm\"\r\n+        >\r\n+            {text}\r\n+            </h4>\r\n         </div>\r\n     );\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1643566693996,
+            "name": "Commit-0",
+            "content": "const HeaderLink = ({ Icon, text, feed, active, avatar, hidden }) => {\r\n    return (\r\n        <div \r\n        className={`cursor-pointer flex flex-col justify-center items-center\r\n        ${feed ? \"text-black/60 hover:text-black dark:text-white/75 dark:hover:text-white lg:-mb-1.5 space-y-1\"\r\n    : \"\"\r\n    }\r\n        `}>\r\n           {avatar ? \r\n           <Icon className=\"!h-7 !w-7 lg:!-mb-1\"/> \r\n           :\r\n           <Icon/>\r\n        }\r\n        <h4 className=\"text-sm\">{text}</h4>\r\n        </div>\r\n    );\r\n}\r\n\r\nexport default HeaderLink;"
+        }
+    ]
+}

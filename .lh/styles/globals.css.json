@@ -1,0 +1,130 @@
+{
+    "sourceFile": "styles/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 28,
+            "patches": [
+                {
+                    "date": 1643569064724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643569072849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n+\n+@layer componens\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569078406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n-@layer componens\n\\ No newline at end of file\n+@layer components {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569085027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n @tailwind components;\n @tailwind utilities;\n \n @layer components {\n-    \n+    .intent {}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569093645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,8 @@\n @tailwind components;\n @tailwind utilities;\n \n @layer components {\n-    .intent {}\n+    .intent {\n+        @apply \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569102015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply \n+        @apply {}\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569108819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply {}\n+        @apply flex\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569161613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex\n+        @apply flex ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569167496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex ;\n+        @apply flex justify-center;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569173540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-center;\n+        @apply flex justify-bet;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569183256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-bet;\n+        @apply flex justify-between items-center hove;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569190264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-between items-center hove;\n+        @apply flex justify-between items-center hover:shadow-sm;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569196030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-between items-center hover:shadow-sm;\n+        @apply flex justify-between items-center hover:shadow-xl;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569201387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-between items-center hover:shadow-xl;\n+        @apply flex justify-between items-center hover:shadow-xl p-4;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569212773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n @tailwind utilities;\n \n @layer components {\n     .intent {\n-        @apply flex justify-between items-center hover:shadow-xl p-4;\n+        @apply flex justify-between items-center hover:shadow-xl p-4\n+        ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569220939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        ;\n+        cursor-pointer;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569227919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer;\n+        cursor-pointer rounded;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569241926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded;\n+        cursor-pointer rounded-lg text;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569248938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded-lg text;\n+        cursor-pointer rounded-lg text-black ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569256473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded-lg text-black ;\n+        cursor-pointer rounded-lg text-black bg-white max;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569262240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded-lg text-black bg-white max;\n+        cursor-pointer rounded-lg text-black bg-white max-w-md;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569267696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded-lg text-black bg-white max-w-md;\n+        cursor-pointer rounded-lg text-black bg-white max-w-md ;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569273852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n \n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n-        cursor-pointer rounded-lg text-black bg-white max-w-md ;\n+        cursor-pointer rounded-lg text-black bg-white max-w-md \n+        mx;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569281261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,7 @@\n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n         cursor-pointer rounded-lg text-black bg-white max-w-md \n-        mx;\n+        mx-auto xl:;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569410447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n+@lay\n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n         cursor-pointer rounded-lg text-black bg-white max-w-md \n-        mx-auto xl:;\n+        mx-auto xl:mx-0;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1643569418828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n-@lay\n+@layer base {\n+    body\n+}\n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n         cursor-pointer rounded-lg text-black bg-white max-w-md \n"
+                },
+                {
+                    "date": 1643569424836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n @tailwind components;\n @tailwind utilities;\n \n @layer base {\n-    body\n+    body {\n+        @apply\n+    }\n }\n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n"
+                },
+                {
+                    "date": 1643569430750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n @tailwind utilities;\n \n @layer base {\n     body {\n-        @apply\n+        @apply bg-gr\n     }\n }\n @layer components {\n     .intent {\n"
+                },
+                {
+                    "date": 1643569437604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,12 @@\n @tailwind utilities;\n \n @layer base {\n     body {\n-        @apply bg-gr\n+        @apply bg-gray-100\n     }\n }\n+\n @layer components {\n     .intent {\n         @apply flex justify-between items-center hover:shadow-xl p-4\n         cursor-pointer rounded-lg text-black bg-white max-w-md \n"
+                }
+            ],
+            "date": 1643569064724,
+            "name": "Commit-0",
+            "content": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n"
+        }
+    ]
+}

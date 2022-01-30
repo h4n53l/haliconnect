@@ -1,0 +1,26 @@
+{
+    "sourceFile": "tailwind.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1643567365034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1643567371330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n module.exports = {\n-  da\n+  darkMode: \n   content: [\"./pages/**/*.{js,ts,jsx,tsx}\",\n   \"./components/**/*.{js,ts,jsx,tsx}\"],\n   theme: {\n     extend: {},\n"
+                },
+                {
+                    "date": 1643567377621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n module.exports = {\n-  darkMode: \n+  darkMode: \"class\",\n   content: [\"./pages/**/*.{js,ts,jsx,tsx}\",\n   \"./components/**/*.{js,ts,jsx,tsx}\"],\n   theme: {\n     extend: {},\n"
+                }
+            ],
+            "date": 1643567365034,
+            "name": "Commit-0",
+            "content": "module.exports = {\n  da\n  content: [\"./pages/**/*.{js,ts,jsx,tsx}\",\n  \"./components/**/*.{js,ts,jsx,tsx}\"],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n}\n"
+        }
+    ]
+}
